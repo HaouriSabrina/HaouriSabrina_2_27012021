@@ -1,8 +1,28 @@
-a:hover
-{
-    color : #0065FC
-}
 body
 {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited
+{
+    color: black;
+}
+
+.top:hover
+{
+    color : #0065FC;
+    text-decoration: overline;
 }
