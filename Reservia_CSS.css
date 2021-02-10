@@ -1,15 +1,4 @@
-body
-{
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-}
-
-header
-{
-    display: flex;
-    justify-content: space-between;
-}
-
+/*DIVERS*/
 a
 {
     text-decoration: none;
@@ -21,8 +10,90 @@ a:visited
     color: black;
 }
 
-.top:hover
+.inscription, .inscription:visited
 {
-    color : #0065FC;
-    text-decoration: overline;
+    color: #0065FC;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+/*MEP HEADER*/
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    width: auto;
+}
+
+.top
+{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inscription 
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.nav-header
+{
+    height: 105px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+#premier-onglet
+{
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+    height: 103px;
+}
+
+
+
+
+/*Footer*/
+footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 30px 50px;
+    background-color: #f2f2f2;
+}
+
+ul 
+{
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+}
+
+li 
+{
+    margin-bottom:20px;
+}
+
+/*titre footer*/
+
+.footer-intro 
+{
+    margin-right: 200px;
+}
+
+.footer-titre {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 250px;
+    font-weight: bold;
 }
