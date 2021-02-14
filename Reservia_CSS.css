@@ -129,24 +129,10 @@ margin-bottom: 8px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.section-filtre 
-{
-    border-radius: 100px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #d6d8dc;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.5s;
-}
 
 .infos
 {
-
     display: flex;
-
 }
 
 #hebergements
@@ -157,20 +143,43 @@ margin-bottom: 8px;
 .hebergements
 {
     background-color: #f2f2f2;
-    width: 70%
+    width: 70%;
+}
+
+.titre-hebergements
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .hebergements img
 {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
 }
-.block-photos
+.block-photos-un
 {
     display: flex;
-    flex-wrap: wrap;
-    
+    justify-content: space-around;
+}
+.block-photos-deux
+{
+    display: flex;
+    justify-content: space-around;
+}
 
+.populaire
+{
+    background-color: #F2F2F2;
+}
+.populaire img
+{
+    width: 200px;
+    height: 150px;
+}
+#hebergements
+{
+    display: flex;
 }
 /*Footer*/
 footer 
