@@ -62,7 +62,9 @@ header
     border-top: 4px solid #0065FC;
     height: 103px;
 }
+
 /*section une*/
+
 #section_une
 {
     width: auto;
@@ -144,7 +146,6 @@ margin-bottom: 8px;
 {
     display: flex;
     margin-top: 15px;
-
 }
 
 .icone-filtre
@@ -153,7 +154,6 @@ margin-bottom: 8px;
     border-radius: 60px;
     color: #0065FC;
     font-weight: bold;
-    padding: 0px;
     padding-right: 20px;
     margin: 0px 20px;
     font-size: 15px;
@@ -203,6 +203,7 @@ margin-bottom: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .infos div 
 {
     display: flex;
@@ -213,7 +214,6 @@ margin-bottom: 8px;
     border: 2px solid #f2f2f2;
     border-radius: 100px;
     margin-right: 10px;
-
 }
 
 .infos i 
@@ -226,12 +226,7 @@ margin-bottom: 8px;
     font-size: 15px;
 }
 
-/*MEP SECTION UNE*/
-
-.section_une
-{
-    margin-left: 1000px;
-}
+/*MEP SECTION HBGMT*/
 
 #hebergements
 {
@@ -241,9 +236,20 @@ margin-bottom: 8px;
 .hebergements
 {
     background-color: #f2f2f2;
+    padding: 30px;
+    margin: 20px;
+    height: 700px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     width: 60%;
+    font-size: 14px;
 }
 
+.hebergements figcaption
+{
+    padding-bottom: 80px;
+}
 .titre-hebergements
 {
     margin-top: 20px;
@@ -252,31 +258,50 @@ margin-bottom: 8px;
 
 .hebergements img
 {
-    background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
 }
 .block-photos-un
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .block-photos-deux
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .populaire
 {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titre-populaire
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
 }
 .populaire img
 {
-    background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
 }
+
+.populaire figure
+{
+display: flex;
+}
+
 #hebergements
 {
     display: flex;
