@@ -23,13 +23,30 @@ a:visited
     box-sizing: border-box;
 }
 
+figure
+{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #f2f2f2;
+    overflow: hidden;
+}
+
+#hebergements figure
+{
+    border: 4px solid white;
+    background-color: white;
+}
+
+#activites figcaption
+{
+    padding: 15px;
+}
 /*MEP HEADER*/
 header
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
+    padding-left: 40px;
     width: auto;
 }
 
@@ -73,7 +90,7 @@ header
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .titre_section_une
@@ -226,11 +243,12 @@ margin-bottom: 8px;
     font-size: 15px;
 }
 
-/*MEP SECTION HBGMT*/
+/*MEP SECTION HBGMT + POPU*/
 
 #hebergements
 {
     display: flex;
+    justify-content: space-around;
 }
 
 .hebergements
@@ -238,7 +256,6 @@ margin-bottom: 8px;
     background-color: #f2f2f2;
     padding: 30px;
     margin: 20px;
-    height: 700px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -246,10 +263,7 @@ margin-bottom: 8px;
     font-size: 14px;
 }
 
-.hebergements figcaption
-{
-    padding-bottom: 80px;
-}
+
 .titre-hebergements
 {
     margin-top: 20px;
@@ -272,6 +286,16 @@ margin-bottom: 8px;
     justify-content: space-between;
 }
 
+.hebergements i
+{
+    color: #0065FC;
+}
+
+.afficher_plus
+{
+    font-weight: bold;
+    font-size: 15px;
+}
 .populaire
 {
     background-color: #f2f2f2;
@@ -282,7 +306,7 @@ margin-bottom: 8px;
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .titre-populaire
@@ -306,6 +330,36 @@ display: flex;
 {
     display: flex;
 }
+
+
+/*MEP ACTIVITE*/
+
+#activites
+{
+    padding: 40px;
+}
+
+.conteneur-activites
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colonne-impair img
+{
+    width: 350px;
+    height: 454px;
+    object-fit: cover;
+}
+
+.colonne-pair img
+{
+    width: 350px;
+    height: 200px;  
+    object-fit: cover; 
+}
+
+
 /*Footer*/
 footer 
 {
