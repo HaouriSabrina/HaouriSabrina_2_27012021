@@ -20,7 +20,9 @@ a:visited
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
+
 /*MEP HEADER*/
 header
 {
@@ -101,6 +103,7 @@ margin-bottom: 8px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: bold;
+
 }
 
 .bouton-rechercher 
@@ -117,22 +120,117 @@ margin-bottom: 8px;
 
 .form-recherche
 {
-
     display: flex;
-
 }
+
+/*MEP Filtre*/
+
 .tous-filtres
 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: 800px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+.tous-filtres p
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section-filtre
+{
+    display: flex;
+    margin-top: 15px;
+
+}
+
+.icone-filtre
+{
+    border: 2px solid #f2f2f2;
+    border-radius: 60px;
+    color: #0065FC;
+    font-weight: bold;
+    padding: 0px;
+    padding-right: 20px;
+    margin: 0px 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-filtre i
+{
+    background-color: #DEEBFF;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icone-filtre a
+{
+    padding-left: 10px;
+}
+
+.icone-filtre:hover
+{
+    color: white;
+}
+
+.icone-filtre:hover i
+{
+    background-color: #0065fc;
+}
+
+.icone-filtre:hover a 
+{
+    color: #0065FC;
+}
+
+/*infos*/
 
 .infos
 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.infos div 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #f2f2f2;
+    border-radius: 100px;
+    margin-right: 10px;
+
+}
+
+.infos i 
+{
+    color: #0065FC;
+}
+
+.infos-txt
+{
+    font-size: 15px;
+}
+
+/*MEP SECTION UNE*/
+
+.section_une
+{
+    margin-left: 1000px;
 }
 
 #hebergements
@@ -143,7 +241,7 @@ margin-bottom: 8px;
 .hebergements
 {
     background-color: #f2f2f2;
-    width: 70%;
+    width: 60%;
 }
 
 .titre-hebergements
@@ -154,6 +252,7 @@ margin-bottom: 8px;
 
 .hebergements img
 {
+    background-size: cover;
     width: 300px;
     height: 200px;
 }
@@ -174,8 +273,9 @@ margin-bottom: 8px;
 }
 .populaire img
 {
-    width: 200px;
-    height: 150px;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
 }
 #hebergements
 {
