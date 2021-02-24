@@ -503,10 +503,47 @@ li
 
 @media screen and (max-width: 375px)
 {
+
+/*populaire et hebergement*/
+    #hebergements
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .populaire
+    {
+        width: 100%;
+        margin :0px;
+    }
+
+    .hebergements
+    {
+        width: auto;
+        margin : 0px;
+        background-color: white;
+    }
+
+    .block-photos-un, .block-photos-deux
+    {
+        display: flex;
+        flex-direction: column;
+    }
+/*activités*/
+    .conteneur-activites
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+/*footer*/
+
     footer 
     {
         display:flex;
         flex-direction: column;
+        padding: 30px;
     }
 
     footer nav
@@ -518,7 +555,7 @@ li
     {
         margin-right: 0px;
     }
-    
+
     li 
     {
         margin:15px 0px;
