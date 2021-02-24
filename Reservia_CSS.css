@@ -42,6 +42,10 @@ figure
     padding: 15px;
 }
 
+.mep
+{
+margin:0% 1%
+}
 /*MEP HEADER*/
 
 header
@@ -108,8 +112,8 @@ margin-bottom: 8px;
 
 .icone-lieu 
 {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: #F2F2F2;
     border-radius: 5px 0 0 5px;
     display: flex;
@@ -119,7 +123,8 @@ margin-bottom: 8px;
 
 .rechercher
 {
-    height: 30px;
+    height: 40px;
+    width: 220px;
     outline: none;
     border: 1px solid #F2F2F2;
     padding-left: 10px;
@@ -132,11 +137,12 @@ margin-bottom: 8px;
     color: white;
     background-color: #3865fd;
     border: none;
-    height: 30px;
+    height: 40px;
     width: 100px;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 10px 10px 0;
     font-weight: bold;
     margin-left: -10px;  
+    font-size: 14px;
 }
 
 .form-recherche
@@ -147,6 +153,7 @@ margin-bottom: 8px;
 ::placeholder
 {
     color: black;
+    font-size: 14px;
 }
 /*MEP Filtre*/
 
@@ -215,7 +222,11 @@ margin-bottom: 8px;
 {
     color: #0065FC;
 }
-
+.filtre
+{
+    margin-right: 30px;
+    margin-top: 15px;
+}
 /*infos*/
 
 .infos
@@ -254,33 +265,39 @@ margin-bottom: 8px;
 #hebergements
 {
     display: flex;
-    justify-content: space-around   ;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+#hebergements b
+{
+    font-weight: bold;
 }
 
 .hebergements
 {
     background-color: #f2f2f2;
     padding: 30px;
-    padding-top: 10px;
     margin: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    font-size: 14px;
+    width: 70%;
+    height: 670px;
 }
+
 
 
 .titre-hebergements
 {
-    margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .hebergements img
 {
-    width: 250px;
-    height: 120px;
+    width: 350px;
+    height: 150px;
     object-fit: cover;
 }
 .block-photos-un
@@ -306,7 +323,7 @@ margin-bottom: 8px;
 
 .hebergements figcaption
 {
-    margin: 10px;
+    margin: 5px 10px;
 }
 
 .hebergements figcaption p
@@ -317,16 +334,18 @@ margin-bottom: 8px;
 .afficher_plus
 {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
+    margin-top: 20px;
 }
+
 .populaire
 {
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 30px;
     margin: 20px;
     border-radius: 10px;
-    font-size: 14px;
-    width: 30%;
+    width: 25%;
+    height: 670px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -336,28 +355,51 @@ margin-bottom: 8px;
 {
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 10px 0px;
 }
+
+.titre-populaire i
+{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
 .populaire img
 {
-    width: 140px;
+    width: 40%;
+    object-fit: cover;
     height: 150px;
+}
+
+.populaire img.portrait
+{
+    width: 50%;
     object-fit: cover;
 }
-
 .populaire figure
-{
-display: flex;
-}
-
-.populaire .note
-{
-    margin-top: 80px;
+{ 
+    display: flex;
+    width: 90%;
+    padding-right: 10%;
+    margin: 10px 0px;
 }
 
 .populaire figcaption
 {
-    margin: 8px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.populaire figcaption p
+{
+    margin-top: 10px;
 }
 
 #hebergements
@@ -365,13 +407,23 @@ display: flex;
     display: flex;
 }
 
-
+.conteneur-populaire
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*MEP ACTIVITE*/
 
 #activites
 {
-    padding: 40px;
+    padding: 30px;
+}
+
+#activites h2
+{
+    margin-bottom: 20px;
 }
 
 .conteneur-activites
@@ -383,14 +435,14 @@ display: flex;
 
 .colonne-impair img
 {
-    width: 350px;
+    width: 420px;
     height: 454px;
     object-fit: cover;
 }
 
 .colonne-pair img
 {
-    width: 350px;
+    width: 420px;
     height: 175px;  
     object-fit: cover; 
 }
@@ -445,4 +497,38 @@ li
     margin-bottom: 10px;
     margin-right: 250px;
     font-weight: bold;
+}
+
+/*______RESPONSIVE PHONE______*/
+
+@media screen and (max-width: 375px)
+{
+    footer 
+    {
+        display:flex;
+        flex-direction: column;
+    }
+
+    footer nav
+    {
+        width: 375px;
+    }
+    
+    .footer-titre
+    {
+        margin-right: 0px;
+    }
+    
+    li 
+    {
+        margin:15px 0px;
+    }
+
+    footer h3
+    {
+        margin: 20px 0px;
+    }
+
+
+        
 }
