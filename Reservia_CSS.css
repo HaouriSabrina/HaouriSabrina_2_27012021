@@ -151,7 +151,7 @@ margin-bottom: 8px;
 {
     display: flex;
 }
-
+  
 ::placeholder
 {
     color: black;
@@ -513,37 +513,135 @@ li
 
 /*_____________RESPONSIVE PHONE___________*/
 
-@media screen and (max-width: 414px)
+@media screen and (max-device-width: 414px)
 {
     .mep
     {
         margin: 0px;
     }
-/*filtres*/
-    .tous-filtres
+/*HEADER*/
+    header
+    {
+        padding-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-top: 15px;
+    }
+  
+    .nav-header:not(img)
     {
         display: flex;
-        flex-direction: column;
-        align-items:
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;     
+    }
+    
+    .nav-header :nth-child(3)
+    {
+        justify-content: flex-end;
     }
 
-    .section-filtre
+    .nav-header
+    {
+        height: 45px;
+    }
+
+    header img
+    {
+        margin-left: 20px;
+    }
+
+    #premier-onglet
+    {
+        height: 40px;
+        border-bottom: 4px solid #0065FC;
+        border-top: 0px;
+        width: 207px;
+        padding: 10px;
+    }
+
+    #deuxieme-onglet
+    {
+        border-bottom: 4px solid #f2f2f2;
+        height: 30px;
+        width: 207px;
+        padding: 10px;
+    }
+   
+    #inscription
+    {
+        width: 414px;
+        padding: 20px;
+    }
+
+/*Section une*/
+
+    #section_une
+    {
+        padding-left: 25px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+
+    .titre_section_une
+    {
+        margin-right: 10px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .sous_titre_une
+    {
+        margin-bottom: 30px;
+    }
+/*recherche*/
+
+    .icone-lieu
+    {
+        border-radius: 15px 0px 0px 15px;
+    }
+
+/*filtres*/
+
+    .tous-filtres
     {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
+    .section-filtre
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .icone-filtre
+    {
+        margin-right: 20px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .filtre
+    {
+        margin-left: 5px;
+    }
+
 /*infos*/
+
     .infos
     {
         margin-bottom: 50px;
+        align-items: flex-start;
     }
 
     .infos-txt
     {
         font-size: 17px;
     }
+
 /*populaire et hebergement*/
 
     #hebergements
@@ -570,6 +668,7 @@ li
     {
         width: 100%;
     }
+
     .hebergements
     {
         margin : 0px;
@@ -640,6 +739,7 @@ li
     {
         margin-bottom: 0px;
     }
+
 /*footer*/
 
     footer 
