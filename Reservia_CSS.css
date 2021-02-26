@@ -1,4 +1,6 @@
+
 /*DIVERS*/
+
 a
 {
     text-decoration: none;
@@ -432,19 +434,29 @@ margin-bottom: 8px;
     justify-content: space-between;
 }
 
-
 .colonne-impair img
 {
-    width: 420px;
     height: 454px;
     object-fit: cover;
+    object-position: initial;
+}
+
+.colonne-impair
+{
+    width: 20%;
 }
 
 .colonne-pair img
 {
-    width: 420px;
-    height: 175px;  
+    height: 175px;
+    width: 100%;
     object-fit: cover; 
+    object-position: initial;
+}
+
+.colonne-pair
+{
+    width: 20%;
 }
 
 #frioul
@@ -499,29 +511,77 @@ li
     font-weight: bold;
 }
 
-/*______RESPONSIVE PHONE______*/
+/*_____________RESPONSIVE PHONE___________*/
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 414px)
 {
+    .mep
+    {
+        margin: 0px;
+    }
+/*filtres*/
+    .tous-filtres
+    {
+        display: flex;
+        flex-direction: column;
+        align-items:
+    }
 
+    .section-filtre
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+/*infos*/
+    .infos
+    {
+        margin-bottom: 50px;
+    }
+
+    .infos-txt
+    {
+        font-size: 17px;
+    }
 /*populaire et hebergement*/
+
     #hebergements
     {
         display: flex;
         flex-direction: column-reverse;
     }
 
+    #hebergements figure
+    {
+        border: 6px solid white;
+        border-radius: 20px;
+    }
+
     .populaire
     {
         width: 100%;
         margin :0px;
+        padding: 10px;
+        border-radius: 0px;
     }
 
+    .populaire figure
+    {
+        width: 100%;
+    }
     .hebergements
     {
-        width: auto;
         margin : 0px;
+        width: 100%;
         background-color: white;
+        height: fit-content;
+        padding: 15px;
+    }
+
+    .hebergements img
+    {
+        width: 100%;
     }
 
     .block-photos-un, .block-photos-deux
@@ -529,36 +589,73 @@ li
         display: flex;
         flex-direction: column;
     }
+
 /*activités*/
+
     .conteneur-activites
     {
         display: flex;
         flex-direction: column;
     }
 
+    .conteneur-activites img
+    {
+        height: 150px;
+        width: fit-content;
+    }
 
+    #pomegues, #frioul
+    {
+        height: 150px;
+        width: 100%;
+    }
+
+    .colonne-pair
+    {
+        width: 100%;
+    }
+
+    .colonne-impair
+    {
+        width: 100%;
+    }
+
+    .colonne-pair figure.first
+    {
+        margin-bottom: 20px;
+
+    }
+
+    .colonne-impair figure
+    {
+        margin: 20px 0px;
+    }
+
+    #activites
+    {
+        padding: 15px;
+    }
+
+    #activites h2
+    {
+        margin-bottom: 0px;
+    }
 /*footer*/
 
     footer 
     {
         display:flex;
         flex-direction: column;
-        padding: 30px;
     }
 
     footer nav
     {
-        width: 375px;
+        width: 414px;
     }
     
     .footer-titre
     {
         margin-right: 0px;
-    }
-
-    li 
-    {
-        margin:15px 0px;
     }
 
     footer h3
