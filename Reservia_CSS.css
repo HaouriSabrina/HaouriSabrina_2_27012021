@@ -747,12 +747,7 @@ li
         display:flex;
         flex-direction: column;
     }
-
-    footer nav
-    {
-        width: 414px;
-    }
-    
+   
     .footer-titre
     {
         margin-right: 0px;
@@ -761,6 +756,11 @@ li
     footer h3
     {
         margin: 20px 0px;
+    }
+
+    .footer-intro
+    {
+        margin-right: 0;
     }
 
 
