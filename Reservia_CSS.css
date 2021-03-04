@@ -556,7 +556,7 @@ li
         height: 40px;
         border-bottom: 4px solid #0065FC;
         border-top: 0px;
-        width: 207px;
+        width: 50%;
         padding: 10px;
     }
 
@@ -564,13 +564,13 @@ li
     {
         border-bottom: 4px solid #f2f2f2;
         height: 30px;
-        width: 207px;
+        width: 50%;
         padding: 10px;
     }
    
     #inscription
     {
-        width: 414px;
+        width: 100%;
         padding: 20px;
     }
 
@@ -578,7 +578,7 @@ li
 
     #section_une
     {
-        padding-left: 25px;
+        padding-left: 15px;
         padding-right: 15px;
         padding-top: 15px;
     }
@@ -601,6 +601,10 @@ li
         border-radius: 15px 0px 0px 15px;
     }
 
+    .rechercher
+    {
+        width: 50%;
+    }
 /*filtres*/
 
     .tous-filtres
