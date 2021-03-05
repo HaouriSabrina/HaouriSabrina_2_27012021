@@ -518,7 +518,7 @@ li
 
 /*_____________RESPONSIVE PHONE___________*/
 
-@media screen and (max-device-width: 414px)
+@media all and (min-width: 0px) and (max-width: 414px)
 {
     .mep
     {
@@ -796,7 +796,7 @@ li
 
 }
 
-@media screen and (max-device-width: 1024px)
+@media all and (min-width: 415px) and (max-width: 1024px)
 {
     .mep
     {
