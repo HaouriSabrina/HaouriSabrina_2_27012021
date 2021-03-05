@@ -147,6 +147,11 @@ margin-bottom: 8px;
     font-size: 14px;
 }
 
+.loupe
+{
+    display: none;
+}
+
 .form-recherche
 {
     display: flex;
@@ -523,8 +528,7 @@ li
     header
     {
         padding-left: 0px;
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
         justify-content: left;
         margin-top: 15px;
     }
@@ -563,9 +567,10 @@ li
     #deuxieme-onglet
     {
         border-bottom: 4px solid #f2f2f2;
-        height: 30px;
+        height: 40px;
         width: 50%;
         padding: 10px;
+        margin-top: 2%
     }
    
     #inscription
@@ -599,11 +604,33 @@ li
     .icone-lieu
     {
         border-radius: 15px 0px 0px 15px;
+        width: 15%;
     }
 
-    .rechercher
+    .form-recherche
     {
-        width: 50%;
+        width: 300px;
+    }
+
+    .bouton-rechercher
+    {
+        display: none;
+    }
+
+    .loupe
+    {
+        color: white;
+        background-color: #3865fd;
+        border: none;
+        height: 40px;
+        width: 15%;
+        border-radius: 10px 10px 10px 10px;
+        font-weight: bold;
+        margin-left: -10px;  
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 /*filtres*/
 
@@ -767,6 +794,160 @@ li
         margin-right: 0;
     }
 
+}
 
-        
+@media screen and (max-device-width: 1024px)
+{
+    .mep
+    {
+        margin: 0;
+    }
+
+    .icone-filtre
+    {
+        margin: 1%;
+    }
+
+    .filtre
+    {
+        margin-right: 3%;
+        margin-top: 2%;
+    }
+    #hebergements
+    {
+        flex-flow: row;
+        margin-bottom: 5%;
+    }
+
+    .hebergements
+    {
+        margin: 0;
+        padding: 3% 0.5%;
+        width: 70%;
+        height: 50%;
+    }
+
+    .hebergements a
+    {
+        margin-right: 1%;
+    }
+
+    .hebergements img
+    {
+        width: 100%;
+        height: 100px;
+    }
+
+    .hebergements figcaption
+    {
+        margin: 0%;
+    }
+
+    #hebergements h3
+    {
+        font-size: 1em;
+    }
+
+    .block-photos-un
+    {
+        margin-top: 8%;
+    }
+
+    .populaire
+    {
+        margin: 0%;
+        justify-content: flex-start;
+        padding: 1%;
+        height: auto;
+        width: 30%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .populaire figure
+    {
+        width:  100%;
+        padding-right: 0%;
+    }
+
+    .populaire img
+    {
+        width: 100%;
+        height: 50px;
+    }
+
+    
+    .populaire img.portrait
+    {
+        width: 100%;
+    }
+
+    .populaire figcaption
+    {
+        margin: 0%;
+    }
+
+    .conteneur-populaire figure
+    {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .afficher_plus 
+    {
+        margin-top: 10%;
+    }
+
+    .conteneur-activites
+    {
+        justify-content: space-around;
+    }
+
+    #activites h2
+    {
+        margin-left: 3%;
+    }
+
+    .colonne-impair img
+    {
+        height: 265px;
+    }
+
+
+    #activites figcaption
+    {
+        padding: 2%;
+    }
+    
+    .colonne-pair figure.first
+    {
+        margin-bottom: 20%;
+    }
+
+    .colonne-pair img
+    {
+        height: 100px;
+    }
+
+    #pomegues
+    {
+        height: 100px;
+    }
+
+    .footer-intro
+    {
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    footer
+    {
+        justify-content: space-between;
+        padding-left: 5%;
+    }
+
+    .footer-titre
+    {
+        margin-right: 0%;
+    }
 }
