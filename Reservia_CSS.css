@@ -803,6 +803,26 @@ li
         margin: 0;
     }
 
+    header
+    {
+        flex-flow: wrap;
+    }
+
+    .nav-header
+    {
+        width: 100%;
+    }
+
+    .top
+    {
+        width: 30%;
+    }
+
+    #premier-onglet
+    {
+        border-top: none ;
+    }
+
     .icone-filtre
     {
         margin: 1%;
@@ -813,10 +833,24 @@ li
         margin-right: 3%;
         margin-top: 2%;
     }
+
+    .section-filtre
+    {
+        flex-flow: wrap;
+        justify-content: flex-start;
+    }
+
+    .tous-filtres
+    {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
     #hebergements
     {
         flex-flow: row;
         margin-bottom: 5%;
+        margin-left: 1%;
     }
 
     .hebergements
@@ -891,6 +925,11 @@ li
     {
         display: flex;
         flex-flow: column;
+    }
+
+    .titre-populaire i
+    {
+        display: none;
     }
 
     .afficher_plus 
